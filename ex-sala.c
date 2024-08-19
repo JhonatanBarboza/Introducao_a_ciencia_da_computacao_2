@@ -1,4 +1,7 @@
+
+//****************Exercicio 1 - (19/08/2024)****************
 // Atividade que o prof passou em sala para entregar (19/08)
+
 #include <stdio.h>
 #include <string.h>
 #include <math.h>

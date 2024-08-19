@@ -1,8 +1,9 @@
 # Repositório de Atividades - Introdução à Ciência da Computação 2
 
-Este repositório será utilizado para compartilhar e coordenar as atividades desenvolvidas durante a disciplina de Introdução à Ciência da Computação 2.
+Bem-vindo ao repositório da disciplina de Introdução à Ciência da Computação 2. Aqui, você encontrará todos os exercícios e atividades que serão desenvolvidos ao longo do curso. Este espaço também servirá para coordenar o andamento das tarefas e facilitar a colaboração entre os participantes.
 
-**Exercicio 1 - (19/08/2024)
+
+## Exercicio 1 - (19/08/2024)
 
 1. Escreva uma função que transforme uma
 string (que contenha apenas dígitos) em um

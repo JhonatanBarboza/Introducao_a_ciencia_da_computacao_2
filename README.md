@@ -49,3 +49,10 @@ deve retornar uma lista vazia.
 4. Escreva uma função em C que inverte a
 ordem dos itens de uma lista encadeada
 sem usar espaço auxiliar
+
+## Exercicio 4 - (29/08/2024)
+1. Problema da maior soma de subsequência
+em um vetor
+◼ Implemente um programa iterativo para
+resolver o problema
+◼ Implemente um problema recursivo

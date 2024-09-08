@@ -32,7 +32,7 @@ Range do %u: 0 até 4294967295
 com conteúdo x em uma lista ordenada. A
 lista deve continuar ordenada após a
 inserção
-Utilize alocação dinâmica
+- Utilize alocação dinâmica
 
 2. Escreva uma função que remova a
 primeira ocorrência de x na lista
@@ -53,6 +53,6 @@ sem usar espaço auxiliar
 ## Exercicio 4 - (29/08/2024)
 1. Problema da maior soma de subsequência
 em um vetor
-◼ Implemente um programa iterativo para
+- Implemente um programa iterativo para
 resolver o problema
-◼ Implemente um problema recursivo
+- Implemente um problema recursivo

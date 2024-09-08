@@ -13,8 +13,8 @@ int maior_soma_interantiva (int *sequencia, int tam){
     // identivica a maior soma dos subvetores
     resultado = soma[0];
     for (int j=0 ; j<tam-2 ; j++){
-        if (resultado<soma[j+1]){
-            resultado = soma [j+1];
+        if (resultado<soma[j]){
+            resultado = soma [j];
         }
     }
     return (resultado);

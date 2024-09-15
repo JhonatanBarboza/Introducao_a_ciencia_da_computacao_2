@@ -56,7 +56,13 @@ A igualdade $\max\{f(n), g(n)\} = \Theta(f(n) + g(n))$ é válida porque, se uma
 Assim, a complexidade de $\max\{f(n), g(n)\}$ e de $f(n) + g(n)$ são assintoticamente equivalentes, o que justifica a validade da igualdade $\max\{f(n), g(n)\} = \Theta(f(n) + g(n))$.
 
 
+
+
+
+
 PROVA DO CHAT POR EU NÃO SEI PROVAR PELA DEFINIÇÃO
+ps: não sei se esta certo 
+
 
 
 ### Definição básica de $\Theta$:

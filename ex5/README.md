@@ -62,8 +62,10 @@ $\max\{f(n), g(n)\} = \Theta(f(n) + g(n))$
 
 Por definição de máximo:
 $\max\{f(n), g(n)\} \leq f(n) + g(n)$
+
 Isso implica que:
 $\max\{f(n), g(n)\} = O(f(n) + g(n))$
+
 Pois existe uma constante $c_2 = 1$ tal que:
 $\max\{f(n), g(n)\} \leq 1 \cdot (f(n) + g(n)) \quad \text{para todo} \ n.$
 
@@ -71,8 +73,10 @@ $\max\{f(n), g(n)\} \leq 1 \cdot (f(n) + g(n)) \quad \text{para todo} \ n.$
 
 Agora, sabemos que:
 $f(n) + g(n) \leq 2 \cdot \max\{f(n), g(n)\}$
+
 Isso é verdade porque $\max\{f(n), g(n)\}$ é maior ou igual a cada uma das funções individualmente, portanto somá-las não pode resultar em mais do que o dobro do máximo. Ou seja:
 $f(n) + g(n) = O(\max\{f(n), g(n)\})$
+
 Pois existe uma constante $c_1 = 2$ tal que:
 $f(n) + g(n) \leq 2 \cdot \max\{f(n), g(n)\} \quad \text{para todo} \ n.$
 
@@ -80,4 +84,5 @@ $f(n) + g(n) \leq 2 \cdot \max\{f(n), g(n)\} \quad \text{para todo} \ n.$
 
 De (Parte 1) e (Parte 2), temos que:
 $c_1 \cdot \max\{f(n), g(n)\} \leq f(n) + g(n) \leq c_2 \cdot \max\{f(n), g(n)\}$
+
 Ou seja, $\max\{f(n), g(n)\} = \Theta(f(n) + g(n))$, provando a afirmação.

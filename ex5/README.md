@@ -45,4 +45,39 @@ $f(x) \in \Theta(x^4).$
 
 Assim, se $f(x) = O(g(x))$ e $g(x) = O(h(x))$, então $f(x) = O(h(x))$.
 
+---
+
 ## Parte 3: Sejam f(n) e g(n) funções assintoticamente não negativas usando a definição basica da notação $\theta$. Prove que $max{ f(n), g(n) } = \theta (f(n) + g(n))$
+
+max siginifica a parte superior das expresões f(n) e g(n) assim para um dado n a função que tiver o maior ordem dominara a expreção. Assim a igualdade é valida pois se f(x) for tiver a maior ordem na soma ele sera o dominante fazendo com que a complexidade seja a correta 
+
+### Definição básica de $\Theta$:
+Para uma função $h(n)$, dizemos que $h(n) = \Theta(k(n))$ se existirem constantes positivas $c_1$, $c_2$ e $n_0$ tal que:
+$c_1 \cdot k(n) \leq h(n) \leq c_2 \cdot k(n) \quad \text{para todo} \ n \geq n_0.$
+
+Nosso objetivo é provar que:
+$\max\{f(n), g(n)\} = \Theta(f(n) + g(n))$
+
+### Parte 1: Mostrar que $\max\{f(n), g(n)\} = O(f(n) + g(n))$
+
+Por definição de máximo:
+$\max\{f(n), g(n)\} \leq f(n) + g(n)$
+Isso implica que:
+$\max\{f(n), g(n)\} = O(f(n) + g(n))$
+Pois existe uma constante $c_2 = 1$ tal que:
+$\max\{f(n), g(n)\} \leq 1 \cdot (f(n) + g(n)) \quad \text{para todo} \ n.$
+
+### Parte 2: Mostrar que $f(n) + g(n) = O(\max\{f(n), g(n)\})$
+
+Agora, sabemos que:
+$f(n) + g(n) \leq 2 \cdot \max\{f(n), g(n)\}$
+Isso é verdade porque $\max\{f(n), g(n)\}$ é maior ou igual a cada uma das funções individualmente, portanto somá-las não pode resultar em mais do que o dobro do máximo. Ou seja:
+$f(n) + g(n) = O(\max\{f(n), g(n)\})$
+Pois existe uma constante $c_1 = 2$ tal que:
+$f(n) + g(n) \leq 2 \cdot \max\{f(n), g(n)\} \quad \text{para todo} \ n.$
+
+### Parte 3: Conclusão
+
+De (Parte 1) e (Parte 2), temos que:
+$c_1 \cdot \max\{f(n), g(n)\} \leq f(n) + g(n) \leq c_2 \cdot \max\{f(n), g(n)\}$
+Ou seja, $\max\{f(n), g(n)\} = \Theta(f(n) + g(n))$, provando a afirmação.

@@ -49,7 +49,15 @@ Assim, se $f(x) = O(g(x))$ e $g(x) = O(h(x))$, então $f(x) = O(h(x))$.
 
 ## Parte 3: Sejam f(n) e g(n) funções assintoticamente não negativas usando a definição basica da notação $\theta$. Prove que $max{ f(n), g(n) } = \theta (f(n) + g(n))$
 
-max siginifica a parte superior das expresões f(n) e g(n) assim para um dado n a função que tiver o maior ordem dominara a expreção. Assim a igualdade é valida pois se f(x) for tiver a maior ordem na soma ele sera o dominante fazendo com que a complexidade seja a correta 
+A função $\max\{f(n), g(n)\}$ representa o maior valor entre $f(n)$ e $g(n)$ para um dado $n$. Isso significa que, para grandes valores de $n$, a função que cresce mais rapidamente (ou seja, a de ordem maior) irá dominar. 
+
+A igualdade $\max\{f(n), g(n)\} = \Theta(f(n) + g(n))$ é válida porque, se uma das funções tiver uma ordem de crescimento maior, ela dominará tanto o máximo quanto a soma. Por exemplo, se $f(n)$ crescer mais rapidamente que $g(n)$, a soma $f(n) + g(n)$ será dominada por $f(n)$, o que faz com que o comportamento assintótico seja essencialmente o mesmo de $\max\{f(n), g(n)\}$.
+
+Assim, a complexidade de $\max\{f(n), g(n)\}$ e de $f(n) + g(n)$ são assintoticamente equivalentes, o que justifica a validade da igualdade $\max\{f(n), g(n)\} = \Theta(f(n) + g(n))$.
+
+
+PROVA DO CHAT POR EU NÃO SEI PROVAR PELA DEFINIÇÃO
+
 
 ### Definição básica de $\Theta$:
 Para uma função $h(n)$, dizemos que $h(n) = \Theta(k(n))$ se existirem constantes positivas $c_1$, $c_2$ e $n_0$ tal que:

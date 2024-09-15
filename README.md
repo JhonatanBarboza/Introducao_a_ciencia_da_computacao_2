@@ -59,5 +59,7 @@ resolver o problema
 
 ## Exercicio 5 - (12/09/2024)
 Parte 1: Mostre que $f(x) = x^4 - 23x^3 + 12x^2 + 15x - 21$ pertence a $\Theta(x^4)$
+
 Parte 2: Se $f(x) = O(g(x))$ e $g(x) = O(h(x))$, mostre que $f(x) = O(h(x))$
+
 Parte 3: Sejam f(n) e g(n) funções assintoticamente não negativas usando a definição basica da notação $\theta$. Prove que $max{ f(n), g(n) } = \theta (f(n) + g(n))$

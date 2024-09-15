@@ -1,34 +1,58 @@
-## Mostre que $x⁴-23x³+12x²+15x-21 = \theta (x⁴)$
+## Parte 1: Mostre que \( f(x) = x^4 - 23x^3 + 12x^2 + 15x - 21 \) pertence a \( \Theta(x^4) \)
 
-Para mostrar que $f(x)=x⁴-23x³+12x²+15x-21$ pertence a $\theta (x⁴)$ devemos verificar os limites superior $O(x⁴)$ e inferiore $\ohm(x⁴)$ de $f(x)$.
+Para mostrar que \( f(x) \in \Theta(x^4) \), precisamos verificar que a função \( f(x) \) está tanto em \( O(x^4) \) (limite superior) quanto em \( \Omega(x^4) \) (limite inferior).
 
-Primeiramente a função $f(x)$ é dominada pelo termo de maior ordem $x⁴$, assim para x suficientemente grande os termos $-23x³+12x²+15x-21$ são irelevantes. Assim podermos afirmar:
+### 1. Limite Superior: \( f(x) = O(x^4) \)
 
-Limite superior $f(x)=o(x⁴)$
+A função \( f(x) \) é dominada pelo termo de maior ordem, que é \( x^4 \). Isso implica que, para \( x \) suficientemente grande, os termos de menor ordem (\( -23x^3 + 12x^2 + 15x - 21 \)) são insignificantes. Assim, temos que:
 
-$f(x)=O(n⁴)$ (limitada superiormente) - já que $x⁴-23x³+12x²+15x-21 <= C.n⁴$ para um $C$ e um $n$ suficientemente grandes.
+\[
+f(x) = x^4 - 23x^3 + 12x^2 + 15x - 21 \leq C \cdot x^4 \quad \text{para algum} \, C > 0 \, \text{e} \, x \geq x_1.
+\]
 
-Limite inferior $f(x)=\ohm(x⁴)$
+Portanto, \( f(x) \in O(x^4) \).
 
-$f(x)=\ohm(n⁴)$ (limitada inferiormente) - já que $x⁴-23x³+12x²+15x-21 >= C'.n⁴$ para $C'>0$ 
+### 2. Limite Inferior: \( f(x) = \Omega(x^4) \)
 
-Assim, podermos concluir que $f(x)$ tem o crecimento assintotico de $\theta(x⁴)$, pois é limitada superiormente $f(x)=O(n⁴)$ e inferiormente $f(x)=\omega(n⁴)$
+Como o termo dominante em \( f(x) \) é \( x^4 \), podemos também afirmar que \( f(x) \) não pode crescer mais lentamente do que \( x^4 \) para valores grandes de \( x \). Formalmente, existe uma constante \( C' > 0 \) tal que:
 
-## Seja $f(x)=O(g(x))$ e $g(x)=O(h(x))$, mostre que $f(x)=O(h(x))$
+\[
+f(x) \geq C' \cdot x^4 \quad \text{para} \, x \geq x_2.
+\]
 
-Definição de Big-O:
+Logo, \( f(x) \in \Omega(x^4) \).
 
-$f(x) = O(g(x))$ significa que existem constantes positivas $C$ e $x.1$ tais que: $f(x)\leq C(g(x))$ para todo $x \geq x.1$
+### Conclusão
 
-Para provar que $f(x) = O(h(x))$, ou seja, queremos mostrar que existem constantes positivas $C_3$ e $x_3$ tais que:
-$|f(x)| \leq C_3 |h(x)|$ para todo $\ x \geq x_3$.
+Como \( f(x) \) está limitada superiormente e inferiormente por \( x^4 \), podemos concluir que:
 
-1. Sabemos que $f(x) = O(g(x))$, então existe uma constante $c_1$ e $x_1$ tal que:$|f(x)| \leq C_1 |g(x)| \quad \text{para todo} \ x \geq x_1.$
-   
-2. Sabemos que $g(x) = O(h(x))$, então existe uma constante $C_2$ e $x_2$ tal que:$|g(x)| \leq C_2 |h(x)| \quad \text{para todo} \ x \geq x_2.$
-   
-3. Substituindo a segunda inequação na primeira, temos:$|f(x)| \leq C_1 |g(x)| \leq C_1 C_2 |h(x)| \quad \text{para todo} \ x \geq \max(x_1, x_2).$
+\[
+f(x) \in \Theta(x^4).
+\]
 
-4. Portanto, temos $|f(x)| \leq C_3 |h(x)|$ para $C_3 = C_1 C_2$ e $x_3 = \max(x_1, x_2)$.
+---
 
-Assim, se $f(x) = O(g(x))$ e $g(x) = O(h(x))$, então $f(x) = O(h(x))$, pois a constante de proporcionalidade $C_3$ pode ser obtida como o produto das constantes $C_1$ e $C_2$.
+## Parte 2: Se \( f(x) = O(g(x)) \) e \( g(x) = O(h(x)) \), mostre que \( f(x) = O(h(x)) \)
+
+### Prova:
+
+1. Sabemos que \( f(x) = O(g(x)) \), ou seja, existe uma constante \( C_1 > 0 \) e um \( x_1 \) tal que:
+   \[
+   |f(x)| \leq C_1 |g(x)| \quad \text{para todo} \, x \geq x_1.
+   \]
+
+2. Sabemos que \( g(x) = O(h(x)) \), ou seja, existe uma constante \( C_2 > 0 \) e um \( x_2 \) tal que:
+   \[
+   |g(x)| \leq C_2 |h(x)| \quad \text{para todo} \, x \geq x_2.
+   \]
+
+3. Substituindo a segunda desigualdade na primeira, obtemos:
+   \[
+   |f(x)| \leq C_1 |g(x)| \leq C_1 C_2 |h(x)| \quad \text{para todo} \, x \geq \max(x_1, x_2).
+   \]
+
+4. Portanto, \( f(x) = O(h(x)) \) com \( C_3 = C_1 C_2 \) e \( x_3 = \max(x_1, x_2) \).
+
+### Conclusão:
+
+Assim, se \( f(x) = O(g(x)) \) e \( g(x) = O(h(x)) \), então \( f(x) = O(h(x)) \).

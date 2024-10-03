@@ -63,3 +63,9 @@ Parte 1: Mostre que $f(x) = x^4 - 23x^3 + 12x^2 + 15x - 21$ pertence a $\Theta(x
 Parte 2: Se $f(x) = O(g(x))$ e $g(x) = O(h(x))$, mostre que $f(x) = O(h(x))$
 
 Parte 3: Sejam f(n) e g(n) funções assintoticamente não negativas usando a definição basica da notação $\theta$. Prove que $max{ f(n), g(n) } = \theta (f(n) + g(n))$
+
+## Exercicio 6 - (30/09/2024)
+Exercício: Formar aleatoriamente vetores de tamanho razoavelmente grande,
+e verificar como a escolha da sequencia de h afeta o desempenho do método.
+Entregar um grafico ou tabela de tempo de execucao com as variaçoes possiveis,
+incluindo o tempo do método de inserção simples.

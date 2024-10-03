@@ -1,4 +1,5 @@
- **Atividade: Ordenação - ShellSort e Inserção Simples**
+## Atividade: Ordenação - ShellSort e Inserção Simples
+
 Exercício: Formar aleatoriamente vetores de tamanho razoavelmente grande,
 e verificar como a escolha da sequencia de h afeta o desempenho do método.
 Entregar um grafico ou tabela de tempo de execucao com as variaçoes possiveis,
@@ -6,6 +7,8 @@ incluindo o tempo do método de inserção simples.
 
 
 Neste relatório, analisamos como diferentes sequências de espaçamento influenciam o desempenho do algoritmo ShellSort, comparando implementações com as sequências original, de Knuth, Sedgewick, e Gonnet e Baeza-Yates. São avaliados tempos de execução, número de comparações e trocas em vetores de tamanhos variados, além de uma comparação com o método de inserção simples, destacando o impacto dessas escolhas na eficiência da ordenação.
+
+![comparação_aleatoria](https://github.com/user-attachments/assets/802bc3cf-e658-447d-9edf-8a454db5b139)
 
 _______________________________________________________
 

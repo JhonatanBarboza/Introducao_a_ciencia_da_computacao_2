@@ -68,4 +68,4 @@ Parte 3: Sejam f(n) e g(n) funções assintoticamente não negativas usando a de
 Exercício: Formar aleatoriamente vetores de tamanho razoavelmente grande,
 e verificar como a escolha da sequencia de h afeta o desempenho do método.
 Entregar um grafico ou tabela de tempo de execucao com as variaçoes possiveis,
-incluindo o tempo do método de inserção simples.
+incluindo o tempo do método de inserção simples.  
